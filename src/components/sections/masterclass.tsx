@@ -16,7 +16,7 @@ export function MasterclassSection() {
                                 <h2 className="text-3xl md:text-4xl font-headline font-bold mb-4">Masterclass Exclusiva con Enrique Trujillo</h2>
                               </CardItem>
                               <CardItem translateZ="60">
-                                <p className="text-muted-foreground mb-6 text-lg">"Desata tu Poder Interior: Estrategias de Liderazgo y Autoconfianza"</p>
+                                <p className="text-muted-foreground mb-6 text-lg">"La belleza es una herramienta, tu esencia es el poder Un taller transformador guiado por Enrique Trujillo."</p>
                               </CardItem>
                               <CardItem translateZ="70">
                                 <p className="mb-6">En este taller intensivo, Enrique te guiará a través de un viaje de autodescubrimiento para que te apropies de tu narrativa, fortalezcas tu presencia ejecutiva y lideres con autenticidad y poder.</p>

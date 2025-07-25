@@ -8,12 +8,13 @@ export function Header() {
           Bloom<span className="text-primary">Empower</span>
         </a>
         <div className="hidden md:flex items-center gap-6 text-sm text-white">
-            <a href="#about" className="transition-colors hover:text-primary">Sobre el Evento</a>
+            <a href="#about" className="transition-colors hover:text-primary">El Evento</a>
             <a href="#agenda" className="transition-colors hover:text-primary">Agenda</a>
+            <a href="#speakers" className="transition-colors hover:text-primary">Ponentes</a>
             <a href="#pricing" className="transition-colors hover:text-primary">Entradas</a>
             <a href="#contact" className="transition-colors hover:text-primary">Contacto</a>
         </div>
-        <Button>Reservar entrada</Button>
+        <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Reservar entrada</Button>
       </nav>
     </header>
   );

@@ -2,6 +2,8 @@ import { Header } from '@/components/header';
 import { HeroSection } from '@/components/sections/hero';
 import { AboutSection } from '@/components/sections/about';
 import { AgendaSection } from '@/components/sections/agenda';
+import { SpeakersSection } from '@/components/sections/speakers';
+import { MasterclassSection } from '@/components/sections/masterclass';
 import { PricingSection } from '@/components/sections/pricing';
 import { QuoteSection } from '@/components/sections/quote';
 import { ContactSection } from '@/components/sections/contact';
@@ -16,6 +18,8 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <AgendaSection />
+        <SpeakersSection />
+        <MasterclassSection />
         <PricingSection />
         <QuoteSection />
         <ContactSection />

@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Bloom Empower',
+  title: 'Innata Women Latam',
   description: 'El Liderazgo, la Belleza y el Poder que habita en ti.',
 };
 

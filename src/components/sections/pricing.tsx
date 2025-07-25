@@ -69,7 +69,7 @@ export function PricingSection() {
                      <p className="text-lg text-muted-foreground mb-8">Posiciona tu marca ante una audiencia de mujeres líderes e influyentes.</p>
                      <Card className="bg-card/80 backdrop-blur-sm border-border/50 p-8 flex flex-col md:flex-row items-center justify-between gap-6 transition-colors duration-300 hover:border-primary/50">
                         <div className="text-left">
-                            <h3 className="text-2xl font-bold">Patrocina Bloom Empower</h3>
+                            <h3 className="text-2xl font-bold">Patrocina Innata Women Latam</h3>
                             <p className="text-muted-foreground mt-1">Gana visibilidad, genera leads y asocia tu marca al empoderamiento femenino.</p>
                         </div>
                         <Button size="lg" variant="outline" className="w-full md:w-auto text-lg flex-shrink-0 border-primary text-primary hover:bg-primary hover:text-primary-foreground">

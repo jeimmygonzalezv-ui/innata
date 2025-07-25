@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Users, VenetianMask } from "lucide-react";
+import Image from "next/image";
 
 const benefits = [
   {
@@ -21,8 +22,18 @@ const benefits = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-24 px-4">
-      <div className="container mx-auto max-w-6xl">
+    <section id="about" className="py-24 px-4 relative overflow-hidden">
+       <div className="absolute inset-0 z-0 opacity-10">
+        <Image
+          src="https://placehold.co/1920x1080.png"
+          alt="Fondo abstracto con formas geométricas"
+          data-ai-hint="abstract geometric shapes"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
+      </div>
+      <div className="container mx-auto max-w-6xl relative z-10">
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Un Evento Diseñado para Ti</h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Innata Women Latam es más que un evento; es una plataforma para catalizar tu crecimiento profesional y personal. Aquí, la inspiración se encuentra con la acción.</p>

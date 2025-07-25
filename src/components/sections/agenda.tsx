@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Clock, Coffee, Mic } from "lucide-react";
 
 const agendaItems = [
-    { icon: <Clock className="w-8 h-8 text-primary mb-3"/>, time: "09:00 AM", title: "Registro y Café de Bienvenida", description: "Comienza el día conectando con otras líderes." },
+    { icon: <Clock className="w-8 h-8 text-primary mb-3"/>, time: "01:30 PM", title: "Registro y Café de Bienvenida", description: "Comienza el día conectando con otras líderes." },
     { icon: <Mic className="w-8 h-8 text-primary mb-3"/>, time: "10:00 AM", title: "Paneles de Innovación y Liderazgo", description: "Conversatorios con mujeres que están marcando la diferencia." },
     { icon: <Coffee className="w-8 h-8 text-primary mb-3"/>, time: "01:00 PM", title: "Almuerzo y Networking VIP", description: "Conexiones valiosas para potenciar tu carrera y negocio." },
 ];

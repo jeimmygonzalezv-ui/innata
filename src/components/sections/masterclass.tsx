@@ -24,11 +24,10 @@ export function MasterclassSection() {
                         </div>
                         <div className="relative w-full h-80 md:h-full min-h-[400px]">
                             <Image
-                                src="https://placehold.co/600x800.png"
-                                alt="Enrique Trujillo, experto en liderazgo"
-                                data-ai-hint="professional man portrait"
+                                src="/enrique-t.jpg"
+                                alt="Enrique Trujillo, experto en liderazgo y ponente de la masterclass"
                                 fill
-                                className="object-cover"
+                                className="object-cover object-top"
                             />
                         </div>
                     </div>

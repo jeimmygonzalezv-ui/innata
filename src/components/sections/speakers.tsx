@@ -40,6 +40,13 @@ const speakersData = [
         src: "https://placehold.co/500x500.png",
         aiHint: "female scientist"
     },
+    {
+        quote: "Promotora de la belleza diversa y el empoderamiento femenino a través de la inclusión en la industria de la moda.",
+        name: "Sabrina Lauviah",
+        designation: "Directora, Miss Plus Size Colombia",
+        src: "https://placehold.co/500x500.png",
+        aiHint: "plus size model director"
+    },
 ];
 
 export function SpeakersSection() {

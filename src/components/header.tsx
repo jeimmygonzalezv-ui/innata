@@ -7,7 +7,7 @@ export function Header() {
         <a href="#" className="text-2xl font-bold text-white font-headline">
           Bloom<span className="text-primary">Empower</span>
         </a>
-        <div className="hidden md:flex items-center gap-6 text-sm">
+        <div className="hidden md:flex items-center gap-6 text-sm text-white">
             <a href="#about" className="transition-colors hover:text-primary">Sobre el Evento</a>
             <a href="#agenda" className="transition-colors hover:text-primary">Agenda</a>
             <a href="#pricing" className="transition-colors hover:text-primary">Entradas</a>

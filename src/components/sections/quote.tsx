@@ -76,7 +76,7 @@ export function QuoteSection() {
         setLoading(false);
       }
     }
-    fetchQuote();
+    fetchQuotes();
   }, []);
 
   if (loading) {

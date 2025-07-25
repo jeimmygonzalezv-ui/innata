@@ -1,15 +1,23 @@
-import { Button } from '@/components/ui/button';
+"use client";
+
 import { HoverBorderGradient } from '@/components/ui/hover-border-gradient';
 import Image from 'next/image';
 
 export function HeroSection() {
+  const handleClick = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative w-full h-screen min-h-[700px] flex items-center justify-center text-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://placehold.co/1920x1080.png"
-          alt="Mujeres profesionales diversas en un evento de liderazgo"
-          data-ai-hint="diverse professional women leadership"
+          alt="Rostro de una mujer con maquillaje profesional, representando belleza y poder"
+          data-ai-hint="woman face makeup"
           fill
           priority
           className="object-cover"
@@ -26,6 +34,7 @@ export function HeroSection() {
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
+          onClick={handleClick}
           className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
         >
           Reserva tu lugar

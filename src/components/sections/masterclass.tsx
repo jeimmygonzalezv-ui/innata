@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 export function MasterclassSection() {
     return (
@@ -18,9 +19,13 @@ export function MasterclassSection() {
                                 <li className="flex items-center gap-2"><Check className="w-5 h-5 text-primary"/><span>Domina el arte de la comunicación influyente.</span></li>
                                 <li className="flex items-center gap-2"><Check className="w-5 h-5 text-primary"/><span>Construye una red de apoyo imparable.</span></li>
                             </ul>
-                            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 transform hover:scale-105 transition-transform">
+                            <HoverBorderGradient
+                                containerClassName="rounded-full"
+                                as="button"
+                                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
+                            >
                                 Quiero esta transformación
-                            </Button>
+                            </HoverBorderGradient>
                         </div>
                         <div className="relative w-full h-80 md:h-full min-h-[400px]">
                             <Image

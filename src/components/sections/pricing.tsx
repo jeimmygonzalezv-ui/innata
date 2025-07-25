@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardFooter, CardTitle, CardDescription } from "@/components/ui/card";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { Check } from "lucide-react";
 
 const tiers = [
@@ -39,28 +40,36 @@ export function PricingSection() {
 
                 <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto mb-24">
                     {tiers.map((tier) => (
-                        <Card key={tier.name} className={`flex flex-col bg-card/80 backdrop-blur-sm border-border/50 transition-all duration-300 hover:scale-105 hover:border-primary ${tier.variant === 'primary' ? 'border-primary shadow-lg shadow-primary/20' : ''}`}>
-                            <CardHeader className="text-left p-8">
-                                <CardTitle className="text-2xl font-headline font-semibold">{tier.name}</CardTitle>
-                                <p className="text-4xl font-bold text-primary pt-2">{tier.price}</p>
-                                <CardDescription className="pt-2 text-base">{tier.description}</CardDescription>
-                            </CardHeader>
-                            <CardContent className="flex-grow text-left p-8 pt-0">
-                                <ul className="space-y-4">
-                                    {tier.features.map((feature) => (
-                                        <li key={feature} className="flex items-start gap-3">
-                                            <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                                            <span>{feature}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </CardContent>
-                            <CardFooter className="p-8">
-                                <Button size="lg" className={`w-full text-lg ${tier.variant === 'primary' ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}`}>
-                                    {tier.cta}
-                                </Button>
-                            </CardFooter>
-                        </Card>
+                      <CardContainer key={tier.name} containerClassName="w-full">
+                        <CardBody className={`flex flex-col bg-card/80 backdrop-blur-sm border-border/50 rounded-xl w-full h-full p-8 ${tier.variant === 'primary' ? 'border-primary shadow-lg shadow-primary/20' : ''}`}>
+                            <CardItem translateZ="20" className="w-full">
+                                <CardHeader className="text-left p-0">
+                                    <CardTitle className="text-2xl font-headline font-semibold">{tier.name}</CardTitle>
+                                    <p className="text-4xl font-bold text-primary pt-2">{tier.price}</p>
+                                    <CardDescription className="pt-2 text-base">{tier.description}</CardDescription>
+                                </CardHeader>
+                            </CardItem>
+                            <CardItem translateZ="30" className="w-full flex-grow">
+                                <CardContent className="flex-grow text-left p-0 pt-8">
+                                    <ul className="space-y-4">
+                                        {tier.features.map((feature) => (
+                                            <li key={feature} className="flex items-start gap-3">
+                                                <Check className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                                                <span>{feature}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </CardContent>
+                            </CardItem>
+                            <CardItem translateZ="40" className="w-full mt-auto">
+                              <CardFooter className="p-0 pt-8">
+                                  <Button size="lg" className={`w-full text-lg ${tier.variant === 'primary' ? 'bg-primary text-primary-foreground hover:bg-primary/90' : ''}`}>
+                                      {tier.cta}
+                                  </Button>
+                              </CardFooter>
+                            </CardItem>
+                        </CardBody>
+                      </CardContainer>
                     ))}
                 </div>
 

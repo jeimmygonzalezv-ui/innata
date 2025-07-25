@@ -5,6 +5,7 @@ import { AgendaSection } from '@/components/sections/agenda';
 import { SpeakersSection } from '@/components/sections/speakers';
 import { MasterclassSection } from '@/components/sections/masterclass';
 import { PricingSection } from '@/components/sections/pricing';
+import { SponsorsSection } from '@/components/sections/sponsors';
 import { ContactSection } from '@/components/sections/contact';
 import { Footer } from '@/components/footer';
 import { StickyButton } from '@/components/ui/sticky-button';
@@ -20,6 +21,7 @@ export default function Home() {
         <SpeakersSection />
         <MasterclassSection />
         <PricingSection />
+        <SponsorsSection />
         <ContactSection />
       </main>
       <Footer />

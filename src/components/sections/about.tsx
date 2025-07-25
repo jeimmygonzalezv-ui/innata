@@ -25,7 +25,7 @@ export function AboutSection() {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-headline font-bold mb-4">Un Evento Diseñado para Ti</h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Bloom Empower es más que un evento; es una plataforma para catalizar tu crecimiento profesional y personal. Aquí, la inspiración se encuentra con la acción.</p>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Innata Women Latam es más que un evento; es una plataforma para catalizar tu crecimiento profesional y personal. Aquí, la inspiración se encuentra con la acción.</p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8">
